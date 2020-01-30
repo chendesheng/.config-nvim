@@ -1,0 +1,55 @@
+{
+  "json.format.enable": true,
+  "coc.preferences.hoverTarget": "float",
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "html",
+    "Markdown",
+    "typescript",
+    "javascript",
+    "javasscriptreact",
+    "typescriptreact",
+    "json",
+    "elm"
+  ],
+  "languageserver": {
+    "fsharp": {
+      "command": "dotnet",
+      "args": [
+        "/Users/chendesheng/fsharp-language-server/src/FSharpLanguageServer/bin/Release/netcoreapp2.0/FSharpLanguageServer.dll"
+      ],
+      "filetypes": ["fsharp"],
+      "trace.server": "verbose",
+      "initializationOptions": {},
+      "settings": {}
+    },
+    "elmLS": {
+      "command": "elm-language-server",
+      "filetypes": ["elm"],
+      "rootPatterns": ["elm.json"],
+      "initializationOptions": {
+        "elmAnalyseTrigger": "never"
+      }
+    },
+    "haskell": {
+      "command": "hie-wrapper",
+      "args": ["--lsp"],
+      "rootPatterns": [
+        "*.cabal",
+        "stack.yaml",
+        "cabal.project",
+        "package.yaml"
+      ],
+      "filetypes": [
+        "hs",
+        "lhs",
+        "haskell"
+      ],
+      "initializationOptions": {
+        "languageServerHaskell": {
+        }
+      }
+    }
+  }
+}
+
