@@ -43,11 +43,11 @@ set shortmess+=c
 let mapleader="\<Space>"
 nnoremap <Space> <Nop>
 
-augroup jsFileType
-  autocmd!
-  autocmd BufNewFile,BufRead *.jsx set filetype=typescript.jsx
-  autocmd BufNewFile,BufRead *.tsx set filetype=typescript.tsx
-augroup END
+" augroup jsFileType
+"   autocmd!
+"   autocmd BufNewFile,BufRead *.jsx set filetype=typescript.jsx
+"   autocmd BufNewFile,BufRead *.tsx set filetype=typescript.tsx
+" augroup END
 
 colorscheme gruvbox
 
