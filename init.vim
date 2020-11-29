@@ -13,6 +13,8 @@ Plug '~/.fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'sbdchd/neoformat'
 Plug 'sheerun/vim-polyglot'
+Plug 'qpkorr/vim-bufkill'
+Plug 'vimlab/split-term.vim'
 call plug#end()
 
 runtime settings.vim

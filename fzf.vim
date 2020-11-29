@@ -45,7 +45,7 @@ endfunction
 
 autocmd! TermEnter * call s:mapEsc()
 
-nnoremap <expr> <C-F> RipgrepFzf(expand('<cword>'), 0)
+nnoremap <expr> <D-f> RipgrepFzf(expand('<cword>'), 0)
 nnoremap <silent> <leader>r :History:<CR>
-nnoremap <expr> <C-P> FilesFzf(getcwd())
+nnoremap <expr> <D-p> FilesFzf(getcwd())
 nnoremap <expr> <leader>, FilesFzf("~/.config/nvim/")

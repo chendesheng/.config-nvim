@@ -37,6 +37,8 @@ set wrapmargin=0
 set mouse=a
 set signcolumn=no
 set laststatus=0
+" Don't pass messages to |ins-completion-menu|.
+set shortmess+=c
 
 let mapleader="\<Space>"
 nnoremap <Space> <Nop>
@@ -51,4 +53,6 @@ colorscheme gruvbox
 
 nnoremap <silent> <C-l> :nohl<CR><C-l>
 nnoremap <silent> <C-Q> :q<CR>
+nnoremap <silent> <D-w> :BD!<CR>
+
 

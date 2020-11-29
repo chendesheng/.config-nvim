@@ -13,16 +13,6 @@
     "elm"
   ],
   "languageserver": {
-    "fsharp": {
-      "command": "dotnet",
-      "args": [
-        "/Users/chendesheng/fsharp-language-server/src/FSharpLanguageServer/bin/Release/netcoreapp2.0/FSharpLanguageServer.dll"
-      ],
-      "filetypes": ["fsharp"],
-      "trace.server": "verbose",
-      "initializationOptions": {},
-      "settings": {}
-    },
     "elmLS": {
       "command": "elm-language-server",
       "filetypes": ["elm"],
@@ -40,16 +30,10 @@
         "cabal.project",
         "package.yaml"
       ],
-      "filetypes": [
-        "hs",
-        "lhs",
-        "haskell"
-      ],
+      "filetypes": ["hs", "lhs", "haskell"],
       "initializationOptions": {
-        "languageServerHaskell": {
-        }
+        "languageServerHaskell": {}
       }
     }
   }
 }
-
