@@ -51,8 +51,10 @@ nnoremap <Space> <Nop>
 
 colorscheme gruvbox
 
-nnoremap <silent> <C-l> :nohl<CR><C-l>
+nnoremap <silent> <C-l> :nohl<CR>
 nnoremap <silent> <C-Q> :q<CR>
 nnoremap <silent> <D-w> :BD!<CR>
+inoremap <silent> <D-s> <esc>:w<CR>
+nnoremap <silent> <D-s> :w<CR>
 
 
