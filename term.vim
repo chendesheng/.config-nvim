@@ -1,6 +1,14 @@
 autocmd! TermOpen * startinsert
 tnoremap <Esc><Esc> <C-\><C-n>
-set splitright
-nnoremap <silent> <D-j> :VTerm<CR>
-tnoremap <C-f> <Right>
-tnoremap <C-b> <Left>
+nmap <leader>j :term<CR>
+
+function! s:mapEsc()
+  if &ft=='fzf'
+    silent! tunmap <Esc><Esc>
+  else
+    tnoremap <Esc><Esc> <C-\><C-n>
+  endif
+endfunction
+
+autocmd! TermEnter * call s:mapEsc()
+

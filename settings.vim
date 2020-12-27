@@ -9,6 +9,7 @@ set incsearch
 set number
 set relativenumber
 set showcmd
+set title
 set hidden
 set ignorecase
 set smartcase
@@ -30,7 +31,7 @@ set wildignore+=*/node_modules/*
 set updatetime=300
 set background=dark
 set undolevels=5000
-set undodir=$HOME/.config/nvim/undodir
+set undodir=$HOME/.undodir
 set undofile
 set wrap
 set wrapmargin=0
@@ -40,21 +41,6 @@ set laststatus=0
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
 
-let mapleader="\<Space>"
-nnoremap <Space> <Nop>
-
-" augroup jsFileType
-"   autocmd!
-"   autocmd BufNewFile,BufRead *.jsx set filetype=typescript.jsx
-"   autocmd BufNewFile,BufRead *.tsx set filetype=typescript.tsx
-" augroup END
-
 colorscheme gruvbox
-
-nnoremap <silent> <C-l> :nohl<CR>
-nnoremap <silent> <C-Q> :q<CR>
-nnoremap <silent> <D-w> :BD!<CR>
-inoremap <silent> <D-s> <esc>:w<CR>
-nnoremap <silent> <D-s> :w<CR>
-
+let $FZF_DEFAULT_OPTS .= '--layout=reverse'
 

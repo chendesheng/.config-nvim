@@ -15,13 +15,14 @@ Plug 'junegunn/fzf.vim'
 " Plug 'sbdchd/neoformat'
 Plug 'sheerun/vim-polyglot'
 Plug 'qpkorr/vim-bufkill'
-Plug 'vimlab/split-term.vim'
+" Plug 'vimlab/split-term.vim'
+Plug 'airblade/vim-rooter'
+Plug 'mileszs/ack.vim'
 call plug#end()
 
 runtime settings.vim
+runtime rg.vim
+runtime keymap.vim
 runtime term.vim
-runtime git.vim
-runtime nerdtree.vim
-runtime fzf.vim
 runtime coc.vim
 " runtime format.vim
