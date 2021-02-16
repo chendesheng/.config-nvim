@@ -47,6 +47,8 @@ let g:far#source='rgnvim'
 let g:far#window_layout='left'
 let g:far#enable_undo=1
 
+hi! Normal ctermbg=NONE guibg=NONE
+
 augroup numbertoggle
   autocmd!
   autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif
