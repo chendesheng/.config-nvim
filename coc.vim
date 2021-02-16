@@ -1,3 +1,4 @@
+let g:coc_node_path = '/opt/homebrew/bin/node'
 
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
@@ -66,6 +67,7 @@ augroup end
 
 " Remap for do codeAction of current line
 nmap <silent><leader>.  <Plug>(coc-codeaction)
+nmap <D-.> <Plug>(coc-codeaction)
 " Fix autofix problem of current line
 nmap <leader>qf  <Plug>(coc-fix-current)
 
@@ -102,7 +104,7 @@ endif
 
 " Using CocList
 " Show all diagnostics
-" nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
+nnoremap <silent> <leader>a  :<C-u>CocList diagnostics<cr>
 " " Manage extensions
 " nnoremap <silent> <space>e  :<C-u>CocList extensions<cr>
 " " Show commands

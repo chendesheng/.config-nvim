@@ -11,7 +11,10 @@ nnoremap <silent> gs :Gstatus<CR>
 nnoremap <silent> <leader>k :NERDTreeFocus<CR>
 nnoremap <silent> <leader>f :Rg <C-r><C-w><CR>
 nnoremap <silent> <leader>r :History:<CR>
+nnoremap <silent> <D-p> :GFiles<CR>
 nnoremap <silent> <C-p> :GFiles<CR>
 nnoremap <silent> <leader>p :Files<CR>
 nnoremap <silent> <leader>, :Files ~/.config/nvim<CR>
+nnoremap <silent> <leader>q :copen<CR>
+nnoremap <silent> <leader>m :History<CR>
 

@@ -19,8 +19,8 @@ set expandtab
 set foldlevelstart=20
 set foldmethod=syntax
 set smartindent
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set wildmode=longest,list
 set completeopt=longest,menuone
 set wildignore+=*/.idea/*
@@ -43,4 +43,13 @@ set shortmess+=c
 
 colorscheme gruvbox
 let $FZF_DEFAULT_OPTS .= '--layout=reverse'
+let g:far#source='rgnvim'
+let g:far#window_layout='left'
+let g:far#enable_undo=1
+
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu && mode() != "i" | set rnu   | endif
+  autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu | set nornu | endif
+augroup END
 
