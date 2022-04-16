@@ -13,5 +13,32 @@
     "elm"
   ],
   "languageserver": {
+    "elmLS": {
+      "command": "elm-language-server",
+      "filetypes": [
+        "elm"
+      ],
+      "rootPatterns": [
+        "elm.json"
+      ]
+    },
+    "sourcekit-lsp": {
+      "filetypes": [
+        "swift"
+      ],
+      "command": "sourcekit-lsp"
+    },
+    "csharp-ls": {
+      "command": "csharp-ls",
+      "filetypes": [
+        "cs"
+      ],
+      "rootPatterns": [
+        "*.csproj",
+        ".vim/",
+        ".git/",
+        ".hg/"
+      ]
+    }
   }
 }
