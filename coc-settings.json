@@ -1,6 +1,9 @@
 {
   "json.format.enable": true,
-  "coc.preferences.hoverTarget": "float",
+  "codeLens.enable": true,
+  "notification.disabledProgressSources": [
+    "*"
+  ],
   "coc.preferences.formatOnSaveFiletypes": [
     "css",
     "html",
@@ -10,7 +13,8 @@
     "javasscriptreact",
     "typescriptreact",
     "json",
-    "elm"
+    "elm",
+    "haskell"
   ],
   "languageserver": {
     "elmLS": {
@@ -38,6 +42,23 @@
         ".vim/",
         ".git/",
         ".hg/"
+      ]
+    },
+    "haskell": {
+      "command": "haskell-language-server-wrapper",
+      "args": [
+        "--lsp"
+      ],
+      "rootPatterns": [
+        "*.cabal",
+        "stack.yaml",
+        "cabal.project",
+        "package.yaml",
+        "hie.yaml"
+      ],
+      "filetypes": [
+        "haskell",
+        "lhaskell"
       ]
     }
   }

@@ -6,7 +6,7 @@ Plug 'preservim/nerdtree'
 Plug 'morhetz/gruvbox'
 Plug 'https://tpope.io/vim/sleuth.git'
 Plug 'https://tpope.io/vim/unimpaired.git'
-Plug 'https://tpope.io/vim/eunuch.git'
+" Plug 'https://tpope.io/vim/eunuch.git'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'antoinemadec/coc-fzf', {'branch': 'release'}
 Plug '~/.fzf'
@@ -15,7 +15,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'qpkorr/vim-bufkill'
 Plug 'airblade/vim-rooter'
 Plug 'mileszs/ack.vim'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
+Plug 'nvim-treesitter/nvim-treesitter' ", {'do': ':TSUpdate'}  We recommend updating the parsers on update
 Plug 'itchyny/vim-qfedit'
 Plug 'edwinb/idris2-vim'
 " Plug 'romainl/vim-qf'
