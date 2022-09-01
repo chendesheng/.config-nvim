@@ -8,7 +8,7 @@ inoremap <silent> <C-s> <esc>:w<CR>
 nnoremap <silent> <C-s> :w<CR>
 
 nnoremap <silent> gs :Gstatus<CR>
-nnoremap <silent> leader>k :NERDTreeFocus<CR>
+nnoremap <silent> <leader>k :NERDTreeFocus<CR>
 nnoremap <silent> <leader>f :Rg <C-r><C-w><CR>
 nnoremap <silent> <leader>r :History:<CR>
 nnoremap <silent> <D-p> :GFiles<CR>
