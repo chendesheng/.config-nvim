@@ -18,6 +18,7 @@ Plug 'mileszs/ack.vim'
 Plug 'nvim-treesitter/nvim-treesitter' ", {'do': ':TSUpdate'}  We recommend updating the parsers on update
 Plug 'itchyny/vim-qfedit'
 Plug 'edwinb/idris2-vim'
+Plug 'machakann/vim-highlightedyank'
 " Plug 'romainl/vim-qf'
 " Plug 'wfxr/minimap.vim'
 " Plug 'neovim/nvim-lspconfig'

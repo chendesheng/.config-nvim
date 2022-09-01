@@ -55,3 +55,5 @@ augroup numbertoggle
   autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu | set nornu | endif
 augroup END
 
+let g:highlightedyank_highlight_duration = 200
+highlight HighlightedyankRegion cterm=reverse gui=reverse
