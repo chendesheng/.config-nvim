@@ -57,3 +57,10 @@ augroup END
 
 let g:highlightedyank_highlight_duration = 200
 highlight HighlightedyankRegion cterm=reverse gui=reverse
+
+if exists("g:neovide")
+  " Put anything you want to happen only in Neovide here
+  let g:neovide_remember_window_size = v:true
+endif
+
+let g:rooter_patterns = ['.git', 'Makefile', '*.sln', '*.cabal', 'package.json', 'elm.json']
