@@ -61,6 +61,8 @@ highlight HighlightedyankRegion cterm=reverse gui=reverse
 if exists("g:neovide")
   " Put anything you want to happen only in Neovide here
   let g:neovide_remember_window_size = v:true
+  let g:neovide_floating_blur_amount_x = 8.0
+  let g:neovide_floating_blur_amount_y = 8.0
 endif
 
 let g:rooter_patterns = ['.git', 'Makefile', '*.sln', '*.cabal', 'package.json', 'elm.json']

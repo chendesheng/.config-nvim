@@ -18,7 +18,8 @@ nnoremap <silent> <leader>p :Files<CR>
 nnoremap <silent> <leader>, :Files ~/.config/nvim<CR>
 nnoremap <silent> <leader>m :History<CR>
 
-imap <silent> <D-v> <C-o>"+p
+tmap <silent> <D-v> <C-\><C-n>"+pi
+imap <silent> <D-v> <C-o>"+P
 vmap <silent> <D-c> "+y
 
 
